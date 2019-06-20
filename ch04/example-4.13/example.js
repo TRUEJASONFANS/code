@@ -47,6 +47,7 @@ negativeButton.onclick = function() {
 };
 
 image.src = '../../shared/images/curved-road.png';
+image.crossOrigin = "Anonymous";
 image.onload = function() {
    context.drawImage(image, 0, 0,
                      image.width, image.height, 0, 0, 

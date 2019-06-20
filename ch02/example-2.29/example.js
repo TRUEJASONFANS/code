@@ -131,6 +131,7 @@ function drawBezierCurve() {
                          controlPoints[1].x, controlPoints[1].y,
                          endPoints[1].x, endPoints[1].y);
    context.stroke();
+   console.log("bezier curve");
 }
 
 function updateEndAndControlPoints() {

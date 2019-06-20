@@ -1,0 +1,6 @@
+{
+  "devDependencies": {},
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

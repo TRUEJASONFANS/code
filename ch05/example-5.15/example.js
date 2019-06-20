@@ -64,6 +64,7 @@ function draw() {
 }
 
 function calculateFps(now) {
+   console.log("ms:",now - lastTime);
    var fps = 1000 / (now - lastTime);
    lastTime = now;
    return fps; 
@@ -80,8 +81,8 @@ function animate(now) {
       erase();
 	   draw();
    }
-
-   requestNextAnimationFrame(animate);
+   console.log("animate run: "+ fps);
+   requestAnimationFrame(animate);
 }
 
 // Event handlers................................................
@@ -106,4 +107,4 @@ sky.onload = function (e) {
    draw();
 };
 
-requestNextAnimationFrame(animate);
+window.requestAnimationFrame(animate);
